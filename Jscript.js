@@ -1,6 +1,6 @@
 
 const getPaises = async () => {
-    let url = 'http://restcountries.eu/rest/v2/name/'
+    let url = 'https://restcountries.eu/rest/v2/name/'
     const response = await fetch(url+document.getElementById("pai").value);
     console.log(response);
     const data = await response.json();
